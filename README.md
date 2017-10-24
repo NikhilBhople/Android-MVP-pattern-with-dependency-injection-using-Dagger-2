@@ -17,3 +17,5 @@ How to use <b>cache to optimise your network efficiency</b><br />
 How to animate loading image in Picasso<br />
 How to do <b>endlessScrolling in RecyclerView</b><br />
 
+<a href="https://imgflip.com/gif/1y5a7p"><img src="https://i.imgflip.com/1y5a7p.gif" title="made at imgflip.com"/></a>
+
