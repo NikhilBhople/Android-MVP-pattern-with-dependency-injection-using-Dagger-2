@@ -1,4 +1,4 @@
-package nikhil.bhople.mvpwithdagger;
+package nikhil.bhople.mvpwithdagger.activities;
 
 import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -19,13 +19,16 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-import nikhil.bhople.mvpwithdagger.adapter.RecipeRecyclerAdapter;
-import nikhil.bhople.mvpwithdagger.dagger.component.DaggerRecipeActivityComponent;
-import nikhil.bhople.mvpwithdagger.dagger.component.RecipeActivityComponent;
-import nikhil.bhople.mvpwithdagger.dagger.module.RecipeActivityModule;
-import nikhil.bhople.mvpwithdagger.model.RecipeApiResponce;
-import nikhil.bhople.mvpwithdagger.presenter.RecipeActivityPresenter;
-import nikhil.bhople.mvpwithdagger.view.RecipeActivityView;
+import nikhil.bhople.mvpwithdagger.R;
+import nikhil.bhople.mvpwithdagger.activities.adapter.RecipeRecyclerAdapter;
+import nikhil.bhople.mvpwithdagger.activities.dagger.DaggerRecipeActivityComponent;
+import nikhil.bhople.mvpwithdagger.application.MyApplication;
+
+import nikhil.bhople.mvpwithdagger.activities.dagger.RecipeActivityComponent;
+import nikhil.bhople.mvpwithdagger.activities.dagger.RecipeActivityModule;
+import nikhil.bhople.mvpwithdagger.activities.mvp.RecipeApiResponce;
+import nikhil.bhople.mvpwithdagger.activities.mvp.RecipeActivityPresenter;
+import nikhil.bhople.mvpwithdagger.activities.mvp.RecipeActivityView;
 
 public class RecipeActivity extends AppCompatActivity implements RecipeActivityView {
 
@@ -56,13 +59,20 @@ public class RecipeActivity extends AppCompatActivity implements RecipeActivityV
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
         //  building dagger component for getting our dependency
+
         RecipeActivityComponent component = DaggerRecipeActivityComponent.builder()
+                .recipeActivityModule(new RecipeActivityModule(this))
+                .mainComponent(MyApplication.get(this).getComponent())
+                .build();
+        component.injectRecipeActivity(this);
+
+  /*      RecipeActivityComponent component = DaggerRecipeActivityComponent.builder()
                 .recipeActivityModule(new RecipeActivityModule(this))
                 .mainComponent(MyApplication.get(this).getComponent())
                 .build();
 
         // injecting our dependency from dagger
-        component.injectRecipeActivity(this);
+        component.injectRecipeActivity(this);*/
 
         pDialog = new ProgressDialog(this);
         pDialog.setMessage("Please wait ...");

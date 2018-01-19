@@ -1,4 +1,4 @@
-package nikhil.bhople.mvpwithdagger.dagger.module;
+package nikhil.bhople.mvpwithdagger.application.dagger.module;
 
 import android.content.Context;
 
@@ -7,7 +7,7 @@ import com.squareup.picasso.Picasso;
 
 import dagger.Module;
 import dagger.Provides;
-import nikhil.bhople.mvpwithdagger.dagger.scope.MainApplicationScope;
+import nikhil.bhople.mvpwithdagger.application.dagger.scope.MainApplicationScope;
 import okhttp3.OkHttpClient;
 
 /**

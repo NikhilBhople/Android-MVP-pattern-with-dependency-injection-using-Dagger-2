@@ -1,12 +1,10 @@
-package nikhil.bhople.mvpwithdagger.presenter;
+package nikhil.bhople.mvpwithdagger.activities.mvp;
 
 import java.util.Map;
 
 import javax.inject.Inject;
 
-import nikhil.bhople.mvpwithdagger.ApiInterfaces;
-import nikhil.bhople.mvpwithdagger.model.RecipeApiResponce;
-import nikhil.bhople.mvpwithdagger.view.RecipeActivityView;
+import nikhil.bhople.mvpwithdagger.extra.ApiInterfaces;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

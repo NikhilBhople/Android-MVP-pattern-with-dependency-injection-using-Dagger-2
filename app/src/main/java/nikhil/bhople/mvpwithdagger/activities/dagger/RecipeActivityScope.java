@@ -1,4 +1,4 @@
-package nikhil.bhople.mvpwithdagger.dagger.scope;
+package nikhil.bhople.mvpwithdagger.activities.dagger;
 
 import javax.inject.Scope;
 

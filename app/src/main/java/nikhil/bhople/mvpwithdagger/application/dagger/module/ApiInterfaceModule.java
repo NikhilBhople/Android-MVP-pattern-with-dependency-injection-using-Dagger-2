@@ -1,10 +1,10 @@
-package nikhil.bhople.mvpwithdagger.dagger.module;
+package nikhil.bhople.mvpwithdagger.application.dagger.module;
 
 import dagger.Module;
 import dagger.Provides;
-import nikhil.bhople.mvpwithdagger.ApiInterfaces;
-import nikhil.bhople.mvpwithdagger.Constant;
-import nikhil.bhople.mvpwithdagger.dagger.scope.MainApplicationScope;
+import nikhil.bhople.mvpwithdagger.extra.ApiInterfaces;
+import nikhil.bhople.mvpwithdagger.extra.Constant;
+import nikhil.bhople.mvpwithdagger.application.dagger.scope.MainApplicationScope;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

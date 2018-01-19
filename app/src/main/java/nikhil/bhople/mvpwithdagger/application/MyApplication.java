@@ -1,17 +1,17 @@
-package nikhil.bhople.mvpwithdagger;
+package nikhil.bhople.mvpwithdagger.application;
 
 import android.app.Activity;
 import android.app.Application;
 
-import nikhil.bhople.mvpwithdagger.dagger.component.DaggerMainComponent;
-import nikhil.bhople.mvpwithdagger.dagger.component.MainComponent;
-import nikhil.bhople.mvpwithdagger.dagger.module.ContextModule;
+import nikhil.bhople.mvpwithdagger.application.dagger.component.DaggerMainComponent;
+import nikhil.bhople.mvpwithdagger.application.dagger.component.MainComponent;
+import nikhil.bhople.mvpwithdagger.application.dagger.module.ContextModule;
 
 /**
  * Created by admin on 18-Oct-17.
  */
 
-public class MyApplication extends Application {
+public class MyApplication extends Application{
 
     private MainComponent component;
     private static MyApplication instance;

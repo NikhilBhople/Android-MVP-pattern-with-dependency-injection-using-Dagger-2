@@ -1,4 +1,4 @@
-package nikhil.bhople.mvpwithdagger.model;
+package nikhil.bhople.mvpwithdagger.activities.mvp;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

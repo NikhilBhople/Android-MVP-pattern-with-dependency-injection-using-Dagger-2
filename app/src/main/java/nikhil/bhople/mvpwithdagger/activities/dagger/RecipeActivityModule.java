@@ -1,9 +1,8 @@
-package nikhil.bhople.mvpwithdagger.dagger.module;
+package nikhil.bhople.mvpwithdagger.activities.dagger;
 
 import dagger.Module;
 import dagger.Provides;
-import nikhil.bhople.mvpwithdagger.dagger.scope.RecipeActivityScope;
-import nikhil.bhople.mvpwithdagger.view.RecipeActivityView;
+import nikhil.bhople.mvpwithdagger.activities.mvp.RecipeActivityView;
 
 /**
  * Created by admin on 18-Oct-17.

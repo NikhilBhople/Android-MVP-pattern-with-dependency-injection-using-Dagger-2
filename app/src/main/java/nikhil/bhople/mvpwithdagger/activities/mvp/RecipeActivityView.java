@@ -1,8 +1,6 @@
-package nikhil.bhople.mvpwithdagger.view;
+package nikhil.bhople.mvpwithdagger.activities.mvp;
 
 import java.util.List;
-
-import nikhil.bhople.mvpwithdagger.model.RecipeApiResponce;
 
 /**
  * Created by admin on 18-Oct-17.

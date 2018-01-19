@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="10dp"
-    tools:context="nikhil.bhople.mvpwithdagger.RecipeActivity">
+    tools:context="nikhil.bhople.mvpwithdagger.activities.RecipeActivity">
 
     <TextView
         android:layout_width="match_parent"

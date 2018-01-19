@@ -1,4 +1,4 @@
-package nikhil.bhople.mvpwithdagger.adapter;
+package nikhil.bhople.mvpwithdagger.activities.adapter;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -15,8 +15,8 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import nikhil.bhople.mvpwithdagger.R;
-import nikhil.bhople.mvpwithdagger.RecipeActivity;
-import nikhil.bhople.mvpwithdagger.model.RecipeApiResponce;
+import nikhil.bhople.mvpwithdagger.activities.RecipeActivity;
+import nikhil.bhople.mvpwithdagger.activities.mvp.RecipeApiResponce;
 
 /**
  * Created by admin on 18-Oct-17.

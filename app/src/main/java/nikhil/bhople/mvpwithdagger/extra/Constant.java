@@ -1,4 +1,4 @@
-package nikhil.bhople.mvpwithdagger;
+package nikhil.bhople.mvpwithdagger.extra;
 
 /**
  * Created by admin on 18-Oct-17.

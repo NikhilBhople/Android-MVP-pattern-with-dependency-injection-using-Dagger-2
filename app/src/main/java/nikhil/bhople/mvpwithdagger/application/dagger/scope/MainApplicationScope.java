@@ -1,4 +1,4 @@
-package nikhil.bhople.mvpwithdagger.dagger.scope;
+package nikhil.bhople.mvpwithdagger.application.dagger.scope;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

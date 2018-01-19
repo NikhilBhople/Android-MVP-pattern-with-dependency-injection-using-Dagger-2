@@ -1,8 +1,8 @@
-package nikhil.bhople.mvpwithdagger;
+package nikhil.bhople.mvpwithdagger.extra;
 
 import java.util.Map;
 
-import nikhil.bhople.mvpwithdagger.model.RecipeApiResponce;
+import nikhil.bhople.mvpwithdagger.activities.mvp.RecipeApiResponce;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
